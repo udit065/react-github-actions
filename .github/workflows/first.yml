@@ -25,3 +25,10 @@ jobs:
 
       - name: Make Build
         run: npm run build
+
+      - name: Create Artifact
+        uses: actions/upload-artifact@v4
+        with:
+              name: react-build
+              path: dist/
+              retention-days: 3
