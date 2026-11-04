@@ -19,6 +19,9 @@ jobs:
 
       - name: ESLint validate
         run: npm run lint
+      
+      - name: Test Case
+        run: npm run test
 
       - name: Make Build
         run: npm run build
